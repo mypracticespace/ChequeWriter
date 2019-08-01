@@ -1,0 +1,13 @@
+{
+    "name": "ChequeWriterApp",
+    "version": "1.0.0",
+    "private": true,
+    "dependencies": {
+        "jasmine": "^3.0.0",
+        "karma": "^4.2.0"
+    },
+    "devDependencies": {
+        "karma-chrome-launcher": "^3.0.0",
+        "karma-jasmine": "^2.0.1"
+    }
+}

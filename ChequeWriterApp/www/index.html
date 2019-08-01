@@ -1,0 +1,42 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <!--
+        Customize the content security policy in the meta tag below as needed. Add 'unsafe-inline' to default-src to enable inline JavaScript.
+        For details, see http://go.microsoft.com/fwlink/?LinkID=617521
+    -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *">
+
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css" />
+    <title>ChequeWriterApp</title>
+</head>
+<body>
+    <div data-role="page" id="cheque-page">
+        <div data-role="header" class="header">
+            <h1 id="app-title">Cheque Writer Application</h1>
+        </div>
+
+        <div role="main" class="ui-content">
+            <input type="number" id="chequeAmountInput" class="large-font" name="chequeAmount" placeholder="Please enter the amount" required />
+            <button id="convertButton" data-role="button">Convert</button>
+            <h3 id="convertedAmount" class="ui-bar ui-bar-a ui-corner-all" style="display:none"></h3>
+            <h3 id="errorMessage" class="ui-bar ui-bar-a ui-corner-all" style="display:none"></h3>
+        </div>
+        <footer data-role="footer" data-position="fixed">
+            <h4>Visual Studio Tools for Cordova Demo</h4>
+        </footer>
+    </div>
+
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="scripts/platformOverrides.js"></script>
+    <script type="text/javascript" src="scripts/index.js"></script>
+    <script type="text/javascript" src="scripts/chequeWriter.js"></script>
+    <script src="scripts/jquery-1.8.0.min.js"></script>
+    <script src="scripts/jquery.mobile-1.4.5.min.js"></script>
+</body>
+</html>
